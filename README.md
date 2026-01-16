@@ -1,14 +1,13 @@
 # Incorporating Interventional Independence Improves Robustness against Interventional Distribution Shift
-
 ---
 
-<p style="text-align: center;">Authors: <a href="https://gautamsreekumar.github.io">Gautam Sreekumar</a>, <a href="https://vishnuboddeti.net">Vishnu Naresh Boddeti</a><br>Michigan State University <br> Transactions on Machine Learning Research, 2025 <br> <a href="https://arxiv.org/abs/2507.05412">Paper</a> | <a href="https://openreview.net/forum?id=kXfcEyNIrf">OpenReview</a> | <a href="https://x.com/gautamsree_/status/1942794242751095295">X Thread</a></p>
+<p align="center">Authors: <a href="https://gautamsreekumar.github.io">Gautam Sreekumar</a>, <a href="https://vishnuboddeti.net">Vishnu Naresh Boddeti</a><br>Michigan State University <br> Transactions on Machine Learning Research, 2025 <br> <a href="https://arxiv.org/abs/2507.05412">Paper</a> | <a href="https://openreview.net/forum?id=kXfcEyNIrf">OpenReview</a> | <a href="https://x.com/gautamsree_/status/1942794242751095295">X Thread</a></p>
 
 ---
 
 ## Paper Abstract
 
-[image](./assets/replin-architecture.png)
+![image](./assets/replin-architecture.png)
 
 **One-line summary**: Explicitly enforcing statistical independence between the representations of an intervened variable and its parent variables in a causal graph improves the robustness of those representations against similar interventions during inference.
 
@@ -65,4 +64,3 @@ Please see ```args.py``` for a detailed description of the available command lin
       url={https://openreview.net/forum?id=kXfcEyNIrf}, 
 }
 ```
-
