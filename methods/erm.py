@@ -42,6 +42,11 @@ class ERM(nn.Module):
         self.head = nn.ModuleList()
         for i in range(self.num_vars):
             self.head.append(arch.MLP([fd, self.num_classes[i]], seed=self.seed+i))
+        
+        rng = torch.get_rng_state()
+        torch.manual_seed(self.seed*10+1203) # random
+        self._init_modules()
+        torch.set_rng_state(rng)
 
     def _init_modules(self):
         for f in self.features:

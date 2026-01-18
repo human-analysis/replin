@@ -207,9 +207,14 @@ def preprocess_args(args):
 
         return d
 
-    # the base folder where you want to save logs and checkpoints
-    base_folder = "/home/gautamsree/new_replin"
-    base_folder = "/research/hal-sreekum1/new_replin"
+    # The code was written with beta being the proportion of
+    # observational data. In the paper, beta is defined as the
+    # proportion of interventional data. So we need to adjust it here.
+    args.beta = 1 - args.beta
+
+    # the base folder where you want to save logs and checkpoints. This
+    # removes the need to specify full paths for logs and checkpoints.
+    base_folder = "."
     
     if args.logs_folder is None:
         args.logs_folder = f"logs_{args.dataset}"
